@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    margin: 2%;
 }
 
 #main_bodybox {
@@ -32,20 +33,22 @@ html {
 }
 
 #beemer_zone{
-    margin: 2%;
+    /* margin: 2%; */
     border-style: ridge;
     text-align: center;
 }
 
 #sidebar_right{
-    top: 0;
-    padding: 2%;
-    border-width: 1px;
-    margin-left: 70%;
+    position: fixed;
+    width: 30%;
+    height: 60%;
+    /* padding: 1%; */
+    z-index: 1;
+    top: 1%;
+    left: 65%;
     color: red;
-    text-align: start;
+    border-width: 1px;
     text-align: left;
     border-style: solid;
     border-color: red;
-    align-content: right;
 }
