@@ -1,18 +1,35 @@
 html {
-    width: 800px;
-    height: 600px;
+    /* width: 800px; */
+    /* height: 600px; */
 
     background-image: url(https://cdn.discordapp.com/attachments/883693400006725712/946506565807128656/Untitled_Artwork.png);
 }
 
 body {
     margin: 2%;
+    font-family:monospace;
     /* background-color: black; */
+}
+
+#beemer_zone{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xxx-large;
+    background-color: black;
+    border-style: ridge;
+    text-align: center;
+    color: red;
+    padding: 10px;
+}
+
+#mute_button{
+    position:relative; top: 30%;
+    margin: 2%;
 }
 
 #main_bodybox {
     background-color: black;
-    height: 400px;
+    width: 55%;
+    height:80%;
     margin-top: 20px;
     margin-left: 5%;
     margin-right: 36%;
@@ -20,39 +37,24 @@ body {
     text-align: left;
     border-style: ridge;
     border-color: red;
+    padding: 2%;
   }
 
-#neo_shoutout {
-    color: red;
-    padding: 4px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 10px;
-    text-align:right
+#lizard_wizard {
+    border-style: ridge;
+    height: 180px;
+    width: 180px;  
+    text-align: center;   
+    border: 1px solid red; 
 }
 
 #neo_shoutout_text {
+    font-size: small;
     background-color: black;
     padding: 4px;
     border-width: 1px;
     border-style: solid;
     border-color: red;
-}
-
-.social_buttons_bottom {
-    position: fixed;
-    margin: 10px;
-    bottom: 0;
-    left: 0;
-    text-align:left;
-}
-
-#beemer_zone{
-    background-color: black;
-    border-style: ridge;
-    text-align: center;
-    color: red;
 }
 
 #sidebar_right{
@@ -70,4 +72,22 @@ body {
     padding: 4px;
     border-style: solid;
     border-color: red;
+}
+
+.social_buttons_bottom {
+    position: fixed;
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+    text-align:left;
+}
+
+#neo_shoutout {
+    color: red;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    text-align:right
 }
