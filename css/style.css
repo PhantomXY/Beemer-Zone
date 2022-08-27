@@ -1,12 +1,13 @@
 html {
-    /* width: 800px; */
-    /* height: 600px; */
-
+    max-width: 800px;
+    max-height: 600px;
     background-image: url(https://cdn.discordapp.com/attachments/883693400006725712/946506565807128656/Untitled_Artwork.png);
 }
 
 body {
-    margin: 2%;
+    max-width: 800px;
+    max-height: 600px;
+    margin: 1em;
     font-family:monospace;
     /* background-color: black; */
 }
@@ -22,17 +23,17 @@ body {
 }
 
 #mute_button{
-    position:relative; top: 30%;
+    position:relative; top: 1em;
     margin: 2%;
 }
 
 #main_bodybox {
     background-color: black;
-    width: 55%;
-    height:80%;
+    width: 34em;
+    height:30em;
     margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 36%;
+    margin-left: 2%;
+    margin-right: 34%;
     color: red;
     text-align: left;
     border-style: ridge;
@@ -76,7 +77,7 @@ body {
 
 .social_buttons_bottom {
     position: fixed;
-    margin: 10px;
+    margin: 0.3em;
     bottom: 0;
     left: 0;
     text-align:left;
