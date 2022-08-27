@@ -1,27 +1,43 @@
 html {
-    background-color: black;
+    width: 800px;
+    height: 600px;
+
+    background-image: url(https://cdn.discordapp.com/attachments/883693400006725712/946506565807128656/Untitled_Artwork.png);
+}
+
+body {
     margin: 2%;
+    /* background-color: black; */
 }
 
 #main_bodybox {
+    background-color: black;
+    height: 400px;
+    margin-top: 20px;
     margin-left: 5%;
-    margin-right: 35%;
+    margin-right: 36%;
     color: red;
-    text-align: center;
+    text-align: left;
     border-style: ridge;
     border-color: red;
   }
 
 #neo_shoutout {
-    background-color: black;
-    border-style: inset;
-    border-color: red;
-    border-width: 1px;
+    color: red;
     padding: 4px;
     position: fixed;
     bottom: 0;
     right: 0;
+    margin-right: 10px;
     text-align:right
+}
+
+#neo_shoutout_text {
+    background-color: black;
+    padding: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .social_buttons_bottom {
@@ -33,22 +49,25 @@ html {
 }
 
 #beemer_zone{
-    /* margin: 2%; */
+    background-color: black;
     border-style: ridge;
     text-align: center;
+    color: red;
 }
 
 #sidebar_right{
+    background-color: black;
     position: fixed;
     width: 30%;
     height: 60%;
-    /* padding: 1%; */
+    margin-top: 20px;
     z-index: 1;
     top: 1%;
     left: 65%;
     color: red;
     border-width: 1px;
     text-align: left;
+    padding: 4px;
     border-style: solid;
     border-color: red;
 }
