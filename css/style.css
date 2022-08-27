@@ -5,8 +5,6 @@ html {
 }
 
 body {
-    max-width: 800px;
-    max-height: 600px;
     margin: 1em;
     font-family:monospace;
     /* background-color: black; */
@@ -23,14 +21,15 @@ body {
 }
 
 #mute_button{
-    position:relative; top: 1em;
+    position:relative; top: 0.8em;
     margin: 2%;
 }
 
 #main_bodybox {
+    position: relative;
     background-color: black;
-    width: 34em;
-    height:30em;
+    height: 30em;
+    width: 56%;
     margin-top: 20px;
     margin-left: 2%;
     margin-right: 34%;
@@ -42,20 +41,12 @@ body {
   }
 
 #lizard_wizard {
+    size: fit-content;
     border-style: ridge;
     height: 180px;
     width: 180px;  
     text-align: center;   
     border: 1px solid red; 
-}
-
-#neo_shoutout_text {
-    font-size: small;
-    background-color: black;
-    padding: 4px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: red;
 }
 
 #sidebar_right{
@@ -66,29 +57,27 @@ body {
     margin-top: 20px;
     z-index: 1;
     top: 1%;
-    left: 65%;
+    right: 1em;
     color: red;
-    border-width: 1px;
     text-align: left;
     padding: 4px;
+    border-width: 1px;
     border-style: solid;
     border-color: red;
 }
 
-.social_buttons_bottom {
-    position: fixed;
-    margin: 0.3em;
-    bottom: 0;
-    left: 0;
-    text-align:left;
-}
-
 #neo_shoutout {
+    z-index: 1;
+    background-color: black;
+    width: 30%;
     color: red;
     padding: 4px;
     position: fixed;
     bottom: 0;
-    right: 0;
-    margin-right: 10px;
-    text-align:right
+    right: 1em;
+    text-align:right;
+    margin-bottom: 1em;;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
