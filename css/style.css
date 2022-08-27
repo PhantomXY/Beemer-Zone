@@ -1,0 +1,50 @@
+html {
+    background-color: black;
+}
+
+#main_bodybox {
+    margin-left: 5%;
+    margin-right: 35%;
+    color: red;
+    text-align: center;
+    border-style: ridge;
+    border-color: red;
+  }
+
+#neo_shoutout {
+    background-color: black;
+    border-style: inset;
+    border-color: red;
+    border-width: 1px;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align:right
+}
+
+.social_buttons_bottom {
+    position: fixed;
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+    text-align:left;
+}
+
+#beemer_zone{
+    margin: 2%;
+    border-style: ridge;
+    text-align: center;
+}
+
+#sidebar_right{
+    top: 0;
+    padding: 2%;
+    border-width: 1px;
+    margin-left: 70%;
+    color: red;
+    text-align: left;
+    border-style: solid;
+    border-color: red;
+    align-content: right;
+}
