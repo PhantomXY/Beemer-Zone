@@ -1,12 +1,10 @@
 html {
     max-width: 800px;
-    max-height: 600px;
+    margin: auto;
     background-image: url(https://cdn.discordapp.com/attachments/883693400006725712/946506565807128656/Untitled_Artwork.png);
 }
 
 body {
-    max-width: 720px;
-    margin: auto;
     font-family:monospace;
 }
 
@@ -25,15 +23,16 @@ body {
 #mute_button{
     position:relative;
     top: 0.8em;
-    left: 12%;
+    left: 0%;
     margin: 2%;
 }
 
 #main_bodybox {
     position: relative;
     background-color: black;
-    height: 25em;
+    height: 40%;
     width: 56%;
+    width: fit-content;
     margin-top: 2em;
     margin-left: 2%;
     margin-right: 34%;
@@ -42,7 +41,6 @@ body {
     border-style: ridge;
     border-color: red;
     padding: 2%;
-
     overflow: scroll;
     /* font-size: large; */
   }
@@ -58,9 +56,10 @@ body {
 
 #sidebar_right{
     background-color: black;
-    position: relative;
-    width: 30%;
-    height: 60%;
+    position: fixed;
+    margin-right: 2%;
+    width: 25%;
+    height: 50%;
     margin-top: 20px;
     z-index: 1;
     top: 1%;
@@ -74,12 +73,14 @@ body {
 }
 
 #neo_shoutout {
+    position: relative;
     z-index: 1;
+    margin-right: 2%;
     background-color: black;
-    width: 30%;
+    height: 10%;
+    width: 25%;
     color: red;
     padding: 4px;
-    position: relative;
     bottom: 0;
     right: 1em;
     text-align:right;
