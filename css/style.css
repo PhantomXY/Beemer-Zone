@@ -30,19 +30,16 @@ body {
 #main_bodybox {
     position: relative;
     background-color: black;
-    height: 40%;
-    width: 56%;
-    width: fit-content;
+    height: 67vh;
+    width: 40em;
     margin-top: 2em;
-    margin-left: 2%;
-    margin-right: 34%;
+    margin-left: 2em;
     color: red;
     text-align: left;
     border-style: ridge;
     border-color: red;
     padding: 2%;
     overflow: scroll;
-    /* font-size: large; */
   }
 
 #lizard_wizard {
@@ -56,8 +53,8 @@ body {
 
 #sidebar_right{
     background-color: black;
-    position: fixed;
-    margin-right: 2%;
+    position: relative;
+    margin-right: 2em;
     width: 25%;
     height: 50%;
     margin-top: 20px;
@@ -75,7 +72,7 @@ body {
 #neo_shoutout {
     position: relative;
     z-index: 1;
-    margin-right: 2%;
+    margin-right: 2em;
     background-color: black;
     height: 10%;
     width: 25%;
