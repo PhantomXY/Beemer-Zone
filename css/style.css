@@ -5,23 +5,26 @@ html {
 }
 
 body {
-    margin: 1em;
+    max-width: 600px;
+    margin: auto;
     font-family:monospace;
-    /* background-color: black; */
 }
 
 #beemer_zone{
+    position: relative;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xxx-large;
     background-color: black;
     border-style: ridge;
     text-align: center;
     color: red;
-    padding: 10px;
+    padding: 14px;
 }
 
 #mute_button{
-    position:relative; top: 0.8em;
+    position:relative;
+    top: 0.8em;
+    left: 12em;
     margin: 2%;
 }
 
@@ -30,7 +33,7 @@ body {
     background-color: black;
     height: 30em;
     width: 56%;
-    margin-top: 20px;
+    margin-top: 10em;
     margin-left: 2%;
     margin-right: 34%;
     color: red;
@@ -38,6 +41,9 @@ body {
     border-style: ridge;
     border-color: red;
     padding: 2%;
+    max-height: 80%;
+    overflow: scroll;
+    /* font-size: large; */
   }
 
 #lizard_wizard {
@@ -51,7 +57,7 @@ body {
 
 #sidebar_right{
     background-color: black;
-    position: fixed;
+    position: relative;
     width: 30%;
     height: 60%;
     margin-top: 20px;
@@ -72,7 +78,7 @@ body {
     width: 30%;
     color: red;
     padding: 4px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     right: 1em;
     text-align:right;
