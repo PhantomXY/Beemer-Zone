@@ -5,13 +5,14 @@ html {
 }
 
 body {
-    max-width: 600px;
+    max-width: 720px;
     margin: auto;
     font-family:monospace;
 }
 
 #beemer_zone{
     position: relative;
+    left: 0;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xxx-large;
     background-color: black;
@@ -24,16 +25,16 @@ body {
 #mute_button{
     position:relative;
     top: 0.8em;
-    left: 12em;
+    left: 12%;
     margin: 2%;
 }
 
 #main_bodybox {
     position: relative;
     background-color: black;
-    height: 30em;
+    height: 25em;
     width: 56%;
-    margin-top: 10em;
+    margin-top: 2em;
     margin-left: 2%;
     margin-right: 34%;
     color: red;
@@ -41,7 +42,7 @@ body {
     border-style: ridge;
     border-color: red;
     padding: 2%;
-    max-height: 80%;
+
     overflow: scroll;
     /* font-size: large; */
   }
