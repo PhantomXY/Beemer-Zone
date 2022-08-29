@@ -6,9 +6,11 @@ html {
 
 body {
     font-family:monospace;
+    height: auto;
 }
 
-#beemer_zone{
+#beemer_zone {
+    margin: 1%;
     position: relative;
     left: 0;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -20,7 +22,7 @@ body {
     padding: 14px;
 }
 
-#mute_button{
+#mute_button {
     position:relative;
     top: 0.8em;
     left: 0%;
@@ -30,8 +32,8 @@ body {
 #main_bodybox {
     position: relative;
     background-color: black;
-    height: 67vh;
-    width: 40em;
+    height: 68vh;
+    width: 50%;
     margin-top: 2em;
     margin-left: 2em;
     color: red;
@@ -51,37 +53,36 @@ body {
     border: 1px solid red; 
 }
 
-#sidebar_right{
-    background-color: black;
-    position: relative;
+.sidebar_right {
     margin-right: 2em;
     width: 25%;
-    height: 50%;
-    margin-top: 20px;
-    z-index: 1;
-    top: 1%;
-    right: 1em;
+    margin-top: 1vh;
+}
+
+#sidebar_right_main {
+    background-color: black;
+    position: relative;
+    height: 60vh;
+    z-index: 2;
     color: red;
     text-align: left;
     padding: 4px;
     border-width: 1px;
     border-style: solid;
     border-color: red;
+    overflow: scroll;
 }
 
 #neo_shoutout {
+    bottom: 1vh;
     position: relative;
     z-index: 1;
-    margin-right: 2em;
     background-color: black;
-    height: 10%;
-    width: 25%;
+    height: 20%;
     color: red;
     padding: 4px;
-    bottom: 0;
-    right: 1em;
     text-align:right;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
     border-width: 1px;
     border-style: solid;
     border-color: red;
