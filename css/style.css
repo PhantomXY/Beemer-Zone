@@ -1,85 +1,89 @@
-/*date of creation: 14th of April, 2022
-        created by: Cabbage Sorter*/
+/*date of creation: 12th of October, 2022
+       originally created by: Cabbage Sorter*/
 
 /* M A I N  G R I D */
-html{
+html {
   max-height: 1080;
   max-width: 1280;
   height: auto;
   margin-top: 1em;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-:root{
+.html::-webkit-scrollbar {
+  display: none;
+}
 
+:root {
   --background-color: black;
+  --background-image: url(https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif);
   font-family: monospace;
   color: #ff0f0f;
 }
 
-body{
-  background-image: url("https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif");
+body {
+  background-image: var(--background-image);
+  background-color: #0f4c68;
+
+  /* SET BACKROUND TO STRETCH */
+
+  /* background-size: cover; */
 }
 
-body a:visited{
-
+body a:visited {
   color: red;
 }
 
-.main{
+.main {
   width: 1000px;
   margin: 0 auto;
 }
 
-.header{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  position:relative ;
+.header {
+  background-image: url(https://media4.giphy.com/media/KYOD96tSm8Ovm/giphy.gif);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: relative;
   padding: 10px;
-  background-size:auto ;
-  border: solid black 1px;
-  
+  background-size: auto;
+  border: solid rgb(255, 0, 0) 4px;
 }
 
-.header span{
+.header span {
   color: red;
   font-size: 56px;
   text-shadow: 2px 2px darkred;
 }
 
-.header span a{
+.header span a {
   text-decoration: none;
   color: inherit;
 }
 
-.header span a:hover{
+.header span a:hover {
   font-size: 58px;
   transition: ease-in-out 100ms;
-  
 }
 
-.header span a:active{
-  -webkit-transform: rotate(25deg); 
+.header span a:active {
+  -webkit-transform: rotate(25deg);
   -moz-transform: rotate(-25deg);
   transition: none;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-rows: 700px 50px;
   grid-template-columns: 200px 800px;
   grid-gap: 0px;
 }
 
-.navbar{
-  background-color: var(--background-color);
+.navbar {
   grid-column: 1 / 1;
-  border-left: solid black 1px;
-  border-top: solid black 1px;
-  padding: 10px;
-  
+  padding: auto;
 }
 
-.main-content{
-  background-color: var(--background-color);
+.main-content {
   grid-column: 2 / 2;
   grid-row: 1 / 2;
   border-top: solid black 1px;
@@ -91,45 +95,34 @@ body a:visited{
   grid-template-rows: 40% 5% 25% 30%;
   overflow-y: scroll;
   overflow-x: hidden;
-  
+  scrollbar-width: none;
 }
 
-
-
-.footer{
-  /* background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif"); */
-  /* background-color: var(--background-color); */
+.footer {
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
-  border: solid black 1px;
   text-align: center;
-  
 }
 
-.inspired a:hover{
-
+.inspired a:hover {
   color: white;
-
 }
 
-.BOTTOM_TEXT{
+.BOTTOM_TEXT {
   font-size: x-large;
-
 }
 
-
-
-.navbar li{
+.navbar li {
   list-style: url("https://cabbagesorter.neocities.org/pics/layout-3/list.gif");
   margin-left: 20px;
   margin-top: 5px;
 }
 
-.navbar p{
+.navbar p {
   font-weight: bold;
 }
 
-.navbar-image{
+.navbar-image {
   width: 80px;
   margin: 0 auto;
   display: block;
@@ -137,7 +130,7 @@ body a:visited{
   bottom: 4vh;
   left: -30px;
 }
-.navbar-image-1{
+.navbar-image-1 {
   width: 80px;
   margin: 0 auto;
   display: block;
@@ -148,7 +141,7 @@ body a:visited{
 
 /*M A I N  C O N T E N T  G R I D*/
 
-.page-about{
+.page-about {
   grid-column: 1 / span 4;
   padding: 10px;
   display: flex;
@@ -156,27 +149,29 @@ body a:visited{
   margin: 10px;
 }
 
-.welcome{
-  font-size: large;
-  margin-top: 20vh;
+.welcome {
+  font-size: 22px;
+  margin: 0;
   text-align: left;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 8em;
 }
 
-.main-content-img{
+.main-content-img {
   margin: 10px;
   display: flex;
   background-color: var(--background-color);
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
-  border: 1px solid #ce7e4b;    
+  border: 1px solid #ce7e4b;
 }
 
-.main-content-img img{
+.main-content-img img {
   max-width: 100%;
 }
 
-
-.warning{
+.warning {
   background-image: URL("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif");
   grid-column: 3 / span 2;
   grid-row: 2 / 2;
@@ -185,7 +180,7 @@ body a:visited{
   padding: 10px;
 }
 
-.inner-warning{
+.inner-warning {
   height: 240px;
   overflow-y: auto;
   background-color: var(--background-color);
@@ -195,17 +190,18 @@ body a:visited{
   text-align: center;
 }
 
-.warning-divider{
+.warning-divider {
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/divider1.gif);
   width: 100%;
-  background-repeat:repeat-x;
+  background-repeat: repeat-x;
 }
 
-.warning h3, .contact h3{
+.warning h3,
+.contact h3 {
   color: #ce7e4b;
 }
 
-.contact{
+.contact {
   grid-column: 1 / 1;
   grid-row: 3 / 3;
   padding: 10px;
@@ -214,9 +210,8 @@ body a:visited{
   background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif");
 }
 
-.inner-contact{
+.inner-contact {
   height: 240px;
-  /* overflow-y: auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -224,8 +219,8 @@ body a:visited{
   background-color: var(--background-color);
 }
 
-.button-banner{
-  grid-column: 3 / span 2 ;
+.button-banner {
+  grid-column: 3 / span 2;
   grid-row: 3 / 3;
   text-align: center;
   padding: 10px;
@@ -234,13 +229,13 @@ body a:visited{
   background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif");
 }
 
-.inner-button-banner{
+.inner-button-banner {
   height: 240px;
   overflow-y: auto;
   background-color: var(--background-color);
 }
 
-.main-content-img2{
+.main-content-img2 {
   border: 1px solid #ce7e4b;
   margin: 10px;
   background-color: var(--background-color);
@@ -249,11 +244,11 @@ body a:visited{
   display: flex;
 }
 
-.main-content-img2 img{
- max-width: 100%;
+.main-content-img2 img {
+  max-width: 100%;
 }
 
-.page-updates{
+.page-updates {
   grid-column: 1 / span 4;
   grid-row: 4 / 4;
   overflow-y: auto;
@@ -261,78 +256,77 @@ body a:visited{
   margin: 10px;
   padding: 10px;
   border: 1px solid red;
-  width: 50vw;
 }
 
-.page-updates li{
-  padding: 5px;
+.page-updates li {
+  margin-right: 5em;
+  padding: 10px;
   border-bottom: darkred 1px solid;
 }
 
-.page-updates p{
+.page-updates p {
   font-weight: bold;
-  background-color: var(--background-color);
   padding: 5px;
 }
 
-.main-content a{
+.main-content a {
   text-decoration: none;
   color: #e7b38d;
 }
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: inherit;
 }
 
-.main-content a:hover, .navbar a:hover{
+.main-content a:hover,
+.navbar a:hover {
   color: #ffffff;
   font-size: large;
   transition: ease-in 80ms;
 }
 
-
 /* S C R O L L B A R*/
 
 ::-webkit-scrollbar {
-width: 7px;
-height: 7px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-button {
-width: 0px;
-height: 0px;
+  width: 0px;
+  height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-background: #e7b38d;
-border: 0px none #ffffff;
+  background: #e7b38d;
+  border: 0px none #ffffff;
 }
 ::-webkit-scrollbar-thumb:hover {
-background: #ce7e4b;
+  background: #ce7e4b;
 }
 ::-webkit-scrollbar-thumb:active {
-background: #ce7e4b;
+  background: #ce7e4b;
 }
 ::-webkit-scrollbar-track {
-background: #85b2bd;
-border: 0px none #ffffff;
+  background: #85b2bd;
+  border: 0px none #ffffff;
 }
 ::-webkit-scrollbar-track:hover {
-background: #85b2bd;
+  background: #85b2bd;
 }
 ::-webkit-scrollbar-track:active {
-background: #85b2bd;
+  background: #85b2bd;
 }
 ::-webkit-scrollbar-corner {
-background: transparent;
+  background: transparent;
 }
 
 ::selection {
-color: white;
-background-color: var(--background-color);
+  color: white;
+  background-color: var(--background-color);
 }
 
 /*D I A R Y*/
 
-.main-content-diary{
+.main-content-diary {
   background-color: var(--background-color);
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/nichijodithered3.png);
   background-size: cover;
@@ -345,14 +339,14 @@ background-color: var(--background-color);
   overflow-y: auto;
 }
 
-.diary-entry{
+.diary-entry {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 50px 400px;
   margin: 30px;
 }
 
-.title{
+.title {
   background-color: var(--background-color);
   grid-column: 1 / span 5;
 
@@ -364,25 +358,23 @@ background-color: var(--background-color);
   border: #ce7e4b 1px solid;
 }
 
-.diary-content{
+.diary-content {
   background-color: var(--background-color);
   grid-column: 1 / span 4;
   grid-row: 2;
 
   padding: 10px;
-  border-bottom:#ce7e4b 1px solid;
+  border-bottom: #ce7e4b 1px solid;
   border-left: #ce7e4b 1px solid;
   border-right: #ce7e4b 1px solid;
   overflow-y: scroll;
-
-
 }
 
-.sidebar{
+.sidebar {
   background-color: var(--background-color);
   grid-column: 5;
   grid-row: 2;
-  
+
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -393,18 +385,18 @@ background-color: var(--background-color);
   overflow-y: scroll;
 }
 
-.main-content-diary a{
+.main-content-diary a {
   text-decoration: none;
   color: #ce7e4b;
 }
 
-.main-content-diary a:hover{
+.main-content-diary a:hover {
   transition: ease-in 200ms;
   color: #ffffff;
 }
 
 /*A N I M E  M A N G A  R E V I E W S*/
-.main-content-anime-manga{
+.main-content-anime-manga {
   background-color: var(--background-color);
   grid-column: 2 / 2;
   grid-row: 1 / 2;
@@ -415,48 +407,49 @@ background-color: var(--background-color);
   overflow-y: auto;
 }
 
-.main-content-anime-manga a:hover, .navbar a:hover{
+.main-content-anime-manga a:hover,
+.navbar a:hover {
   font-size: large;
   transition: none;
 }
 
-.main-content-anime-manga a{
+.main-content-anime-manga a {
   color: #ce7e4b;
   text-decoration: none;
 }
 
-.grid-anime-manga{
+.grid-anime-manga {
   display: grid;
   width: 800px;
-  grid-template-columns:  repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-auto-flow: row;
 }
 
-.description-am{
+.description-am {
   background-color: inherit;
   grid-column: 1 / span 5;
   grid-row: auto;
   padding: 10px;
-  
+
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.favourites{
+.favourites {
   grid-column: 3 / 3;
-  text-align:center;
+  text-align: center;
 }
 
-.fav-anime{
+.fav-anime {
   grid-column: 3 / 3;
 }
 
-.fav-anime p{
+.fav-anime p {
   text-align: center;
   font-weight: bold;
 }
 
-.anime-flex-container{
+.anime-flex-container {
   grid-column: 1 / span 5;
   display: flex;
   flex-wrap: wrap;
@@ -470,27 +463,25 @@ background-color: var(--background-color);
 .anime-img {
   width: 162px;
   height: 232px;
-
 }
 
-.anime-img-title{
+.anime-img-title {
   position: relative;
   width: 162px;
   height: 232px;
   float: left;
-  
 }
 
-.anime-title{
+.anime-title {
   position: absolute;
   bottom: 0;
   right: 0;
   color: inherit;
   margin-bottom: 5px;
-  font-family: 'ms ui gothic', sans-serif;
+  font-family: "ms ui gothic", sans-serif;
   opacity: 1;
   visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
   text-align: center;
   color: inherit;
@@ -498,74 +489,70 @@ background-color: var(--background-color);
   width: 120px;
 }
 
-.anime-img-title:hover{
+.anime-img-title:hover {
   cursor: pointer;
 }
 
-.anime-img-title:hover div{
+.anime-img-title:hover div {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   visibility: visible;
-  opacity: 1; 
+  opacity: 1;
 }
 
 .clickableimg img:hover {
   opacity: 0.2;
   transition: ease-in 200ms;
-} 
+}
 
-.fav-manga{
+.fav-manga {
   grid-column: 3 / 3;
 }
 
-.fav-manga p{
+.fav-manga p {
   text-align: center;
   font-weight: bold;
 }
 
-.reviews{
+.reviews {
   grid-column: 3 / 3;
   text-align: center;
 }
 
-.reviews-warning{
+.reviews-warning {
   grid-column: 2 / 5;
   text-align: center;
-  border-bottom:1px solid ;
+  border-bottom: 1px solid;
 }
 
-.reviews-container{
+.reviews-container {
   padding: 40px;
   grid-column: 1 / span 5;
   text-align: justify;
 }
 
-.thoughts-container{
+.thoughts-container {
   padding: 40px;
   grid-column: 1 / span 5;
   text-align: justify;
 }
 
-summary{
+summary {
   text-align: left;
   cursor: pointer;
   padding: 5px;
   border-bottom: 1px solid;
 }
 
-
-summary img{
+summary img {
   width: 110px;
   border: #ce7e4b 1px solid;
-  
 }
-
-
 
 /*404 P A G E*/
 
-.not-found{
+.not-found {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -579,7 +566,7 @@ summary img{
 
 /*B U T T O N S */
 
-.main-content-buttons{
+.main-content-buttons {
   background-color: var(--background-color);
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/bg6.gif);
   grid-column: 2 / 2;
@@ -590,34 +577,36 @@ summary img{
 
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  overflow: auto;      
-  padding: 10px;        
+  align-items: center;
+  overflow: auto;
+  padding: 10px;
 }
 
-.clickablebuttons, .clickablebanners{
+.clickablebuttons,
+.clickablebanners {
   text-align: center;
   padding: 10px;
   background-color: var(--background-color);
   border: 1px solid #ce7e4b;
-} 
-  
-.clickablebuttons{
+}
+
+.clickablebuttons {
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/nichijodithered3.png);
   background-size: cover;
 }
 
-.clickablebanners{
+.clickablebanners {
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/nichijodithered3.png);
   background-size: auto;
 }
 
-.clickablebuttons p,.clickablebanners h3{
+.clickablebuttons p,
+.clickablebanners h3 {
   background-color: var(--background-color);
   padding: 3px;
 }
 
-.clickablebuttons img{
+.clickablebuttons img {
   width: 88px;
   height: 31px;
 }
@@ -625,16 +614,16 @@ summary img{
 .clickablebuttons img:hover {
   opacity: 0.6;
   transition: ease-in 200ms;
-  } 
+}
 
-.clickablebuttons a{
+.clickablebuttons a {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 /*B O O K S*/
 
-.main-content-books{
+.main-content-books {
   background-color: var(--background-color);
   grid-column: 2 / 2;
   grid-row: 1 / 2;
@@ -642,15 +631,16 @@ summary img{
   border-right: solid black 1px;
   border-left: solid black 1px;
 
-  padding:20px;
+  padding: 20px;
   overflow-y: scroll;
 }
 
-table{
+table {
   border-collapse: collapse;
 }
 
-td,th{
+td,
+th {
   border: 1px solid #ce7e4b;
   text-align: left;
   padding: 8px;
@@ -658,49 +648,48 @@ td,th{
 
 tr:nth-child(even) {
   background-color: var(--background-color);
-  }
+}
 
-.book-pic{
+.book-pic {
   width: 200px;
 }
 
-.book-title{
+.book-title {
   width: 100px;
 }
 
-.book-author{
+.book-author {
   width: 100px;
 }
 
-
-.book-review{
+.book-review {
   width: 300px;
 }
 
-td div{
+td div {
   height: 250px;
   overflow-y: scroll;
 }
 
-td img{
+td img {
   width: 180px;
 }
 
-.spoiler{
+.spoiler {
   background-color: var(--background-color);
   color: #85b2bd;
 }
 
-.spoiler:hover{
+.spoiler:hover {
   background-color: inherit;
   color: inherit;
 }
 
-.disclaimer-books{
+.disclaimer-books {
   padding: 10px;
 }
 
-.book-review-flex{
+.book-review-flex {
   display: flex;
   align-items: center;
   background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg4.gif");
@@ -710,7 +699,7 @@ td img{
   margin-bottom: 10px;
 }
 
-.book-review-flex img{
+.book-review-flex img {
   width: 300px;
   border-left: #557f69 1px solid;
 }
@@ -720,11 +709,11 @@ td img{
 .bannerother {
   width: 240px;
   height: 60px;
-  }
+}
 
 /*R A N D O M  S I T E S*/
 
-.main-content-sites{
+.main-content-sites {
   background-color: var(--background-color);
   grid-column: 2 / 2;
   grid-row: 1 / 2;
@@ -736,41 +725,40 @@ td img{
   padding: 20px;
 }
 
-.main-content-sites a{
+.main-content-sites a {
   text-decoration: none;
   color: inherit;
 }
 
-.main-content-sites a:hover{
+.main-content-sites a:hover {
   transition: ease-in 200ms;
   color: #85b2bd;
 }
 
-.dress-up{
+.dress-up {
   padding: 10px;
 }
 
-.dress-up h3, .dress-up p{
+.dress-up h3,
+.dress-up p {
   text-align: center;
 }
 
-.site-name{
+.site-name {
   width: 100px;
 }
 
-.base-av{
+.base-av {
   max-width: 150px;
 }
 
-.pros-cons{
+.pros-cons {
   width: 440px;
 }
 
-
-.base-av img{
+.base-av img {
   width: auto;
   height: 300px;
-
 }
 
 .pros-cons-div {
@@ -778,13 +766,14 @@ td img{
   text-align: left;
 }
 
-.dressup-table td, .dressup-table th{
+.dressup-table td,
+.dressup-table th {
   text-align: center;
 }
 
 /*M I S C E L L A N E O U S*/
 
-.main-content-misc{
+.main-content-misc {
   background-color: var(--background-color);
   grid-column: 2 / 2;
   grid-row: 1 / 2;
@@ -794,26 +783,25 @@ td img{
 
   overflow-y: scroll;
   padding: 10px;
-  background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/bg5.gif)
+  background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/bg5.gif);
 }
 
-.misc-intro{
+.misc-intro {
   display: flex;
   align-items: center;
   padding: 10px;
   border: 1px solid #ce7e4b;
   background-color: var(--background-color);
-  
 }
 
-.misc-content{
+.misc-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.misc-entry{
+.misc-entry {
   border: 1px #ce7e4b;
-  border-style:none solid solid none;
+  border-style: none solid solid none;
   padding: 10px;
   background-color: var(--background-color);
   margin-left: 30px;
@@ -822,19 +810,19 @@ td img{
   margin-bottom: 20px;
 }
 
-.main-content-misc a{
+.main-content-misc a {
   text-decoration: none;
   color: #ce7e4b;
 }
 
-.main-content-misc a:hover{
+.main-content-misc a:hover {
   transition: ease-in 200ms;
   color: #85b2bd;
 }
 
 /*A R T I C L E S*/
 
-.main-content-articles{
+.main-content-articles {
   background-color: var(--background-color);
   grid-column: 2 / 2;
   grid-row: 1 / 2;
@@ -843,15 +831,15 @@ td img{
   border-left: solid black 1px;
   overflow-y: scroll;
   background-color: var(--background-color);
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-rows: auto;
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/art-bg.gif);
   color: #2912057c;
 }
 
-.articles-intro{
+.articles-intro {
   padding: 10px;
   background-color: var(--background-color);
   grid-column: 2 / 4;
@@ -859,22 +847,22 @@ td img{
   border-left: 1px solid rgb(122, 75, 83);
 }
 
-.articles-intro ul{
+.articles-intro ul {
   list-style-image: url(https://cabbagesorter.neocities.org/pics/layout-3/list-art1.gif);
 }
 
-.articles-intro a{
+.articles-intro a {
   text-decoration: none;
   color: inherit;
 }
 
-.articles-intro li:hover{
+.articles-intro li:hover {
   color: rgb(122, 75, 83);
   transition: ease-in 0.2s;
 }
 
-.articles-divider{
+.articles-divider {
   width: 100%;
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/art-divider.gif);
-  background-repeat:repeat-x;
+  background-repeat: repeat-x;
 }
