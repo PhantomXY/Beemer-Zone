@@ -4,12 +4,6 @@
 /* M A I N  G R I D */
 html {
   margin-top: 0.2em;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-html::-webkit-scrollbar {
-  display: none;
 }
 
 @font-face {
@@ -94,11 +88,6 @@ body {
   /* background-size: cover; */
 }
 
-/* body a:visited {
-  
-
-} */
-
 .main {
   width: 1000px;
   margin: 0 auto;
@@ -166,7 +155,6 @@ body {
 .main-content {
   grid-column: 2 / 2;
   grid-row: 1 / 2;
-
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 40% 5% 25% 30%;
@@ -195,12 +183,13 @@ body {
 }
  .inspired a:link {
   text-decoration: none;
-
+  color: #48df54;
  }
 
 .inspired a:hover {
   font-size: small;
   color: white;
+  animation: glitch-h 50ms infinite;
 }
 
 /* Marquee Bottom Scroll.   */
@@ -293,7 +282,7 @@ body {
   text-align: left;
   overflow-y: scroll;
   scrollbar-width: none;
-  margin-top: 8em;
+  -ms-overflow-style: none;
 }
 
 .welcome h1 {
