@@ -83,12 +83,10 @@ body {
   /* background-size: cover; */
 }
 
-body a:visited {
-}
-
 .main {
   width: 1000px;
   margin: 0 auto;
+  max-width:100%;
 }
 
 .header {
@@ -164,6 +162,10 @@ body a:visited {
   display: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .footer {
   grid-column: 1 / span 2;
   grid-row: 2 / 2;
@@ -180,7 +182,7 @@ body a:visited {
 .inspired a:link {
   text-decoration: none;
   color: #48df54;
-}
+ }
 
 .inspired a:hover {
   font-size: small;
@@ -188,11 +190,42 @@ body a:visited {
   animation: glitch-h 50ms infinite;
 }
 
-.BOTTOM_TEXT {
-  border: solid rgb(255, 0, 0) 1px;
+/* Marquee Bottom Scroll.   */
+/* Gio Was Here !!! */
+
+.marquee-parent {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20px;
   font-size: large;
+  border: solid rgb(255, 0, 0) 1px;
+  text-align: center;
   background-color: black;
 }
+.marquee-child {
+  display: block;
+  width: 100%;
+  /* width of your text div */
+  height: 20px;
+  /* height of your text div */
+  position: absolute;
+  animation: marquee 8s linear infinite; /* change 5s value to your desired speed */
+}
+.marquee-child:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100% /* same as your text width */
+  }
+}
+
+ /* Gio Ends Here  */
 
 .navbar li {
   list-style: square;
@@ -249,10 +282,6 @@ body a:visited {
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
-
-.welcome::-webkit-scrollbar {
-  display: none;
 }
 
 .welcome h1 {
