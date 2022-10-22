@@ -7,9 +7,9 @@ html {
 }
 
 @font-face {
-  font-family: 'blackcasperregular';
-  src: url('../assets/fonts/blackcasper-webfont.woff2') format('woff2'),
-       url('../assets/fonts/blackcasper-webfont.woff') format('woff');
+  font-family: "blackcasperregular";
+  src: url("../assets/fonts/blackcasper-webfont.woff2") format("woff2"),
+    url("../assets/fonts/blackcasper-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,19 +18,15 @@ html {
   0% {
     text-shadow: 0.05em 0 0 rgba(150, 0, 0, 0.75),
       -0.05em -0.025em 0 rgba(252, 248, 4, 0.75);
-
   }
   14% {
     text-shadow: 0.05em 0 0 rgba(150, 0, 0, 0.75);
-
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(150, 0, 0, 0.75),
-
+    text-shadow: -0.05em -0.025em 0 rgba(150, 0, 0, 0.75);
   }
   49% {
-    text-shadow: -0.05em -0.025em 0 rgba(150, 0, 0, 0.75),
-
+    text-shadow: -0.05em -0.025em 0 rgba(150, 0, 0, 0.75);
   }
   50% {
     text-shadow: 0.025em 0.05em 0 rgba(150, 0, 0, 0.75),
@@ -41,8 +37,8 @@ html {
       0.05em 0 0 rgba(252, 248, 4, 0.75);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(150, 0, 0, 0.75,)
-      -0.025em -0.025em 0 rgba(252, 248, 4, 0.75),
+    text-shadow: -0.025em 0 0 rgba(150, 0, 0, 0.75) -0.025em -0.025em 0
+        rgba(252, 248, 4, 0.75),
       -0.025em -0.05em 0 rgba(44, 247, 213, 0.75);
   }
 }
@@ -52,7 +48,7 @@ html {
     text-shadow: 0.05em 0 0 rgb(202, 7, 7);
   }
   14% {
-    text-shadow: 0.050em 0 0 rgb(233, 11, 11);
+    text-shadow: 0.05em 0 0 rgb(233, 11, 11);
   }
   15% {
     text-shadow: -0.08em -0.025em 0 rgb(175, 9, 9);
@@ -71,11 +67,10 @@ html {
   }
 }
 
-
 :root {
   --background-color: black;
   --background-image: url(https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif);
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: #ff0f0f;
 }
 
@@ -96,13 +91,13 @@ body {
 
 .header {
   position: relative;
-  font-family: 'blackcasperregular';
+  font-family: "blackcasperregular";
   font-size: x-large;
   padding: 5px;
   background-size: auto;
   text-shadow: 0.5em 0 0 rgba(150, 0, 0, 0.75),
-              -0.25em -0.05em 0 rgba(252, 248, 4, 0.75),
-               0.25em 0.05em 0 rgba(44, 247, 213, 0.75);
+    -0.25em -0.05em 0 rgba(252, 248, 4, 0.75),
+    0.25em 0.05em 0 rgba(44, 247, 213, 0.75);
   animation: glitch-h 128ms infinite;
 }
 
@@ -137,13 +132,12 @@ body {
 .grid-container-right {
   top: 0;
   right: 0;
-  margin-right: 25%
+  margin-right: 25%;
 }
 
 .navbar {
   grid-column: 1 / 1;
   padding: auto;
-  
 }
 
 .navbar h2 {
@@ -161,6 +155,11 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.main-content::-webkit-scrollbar {
+  display: none;
 }
 
 ::-webkit-scrollbar {
@@ -173,15 +172,14 @@ body {
   text-align: center;
 }
 
-.footer a:visited  {
+.footer a:visited {
   color: #1e9b28;
-
 }
 .inspired {
   font-size: small;
   color: red;
 }
- .inspired a:link {
+.inspired a:link {
   text-decoration: none;
   color: #48df54;
  }
@@ -279,6 +277,7 @@ body {
 .welcome {
   font-size: 22px;
   margin: 2px;
+  margin-top: 8em;
   text-align: left;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -287,7 +286,7 @@ body {
 
 .welcome h1 {
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .main-content-img {
