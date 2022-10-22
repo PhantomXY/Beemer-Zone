@@ -158,10 +158,6 @@ body {
   -ms-overflow-style: none;
 }
 
-.main-content::-webkit-scrollbar {
-  display: none;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
