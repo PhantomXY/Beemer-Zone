@@ -80,7 +80,6 @@ body {
   background-color: var(--background-color);
 
   /* SET BACKROUND TO STRETCH */
-
   /* background-size: cover; */
 }
 
@@ -106,17 +105,14 @@ body {
   color: red;
   font-size: 56px;
 }
-
 .header span a {
   text-decoration: none;
   color: inherit;
 }
-
 .header span a:hover {
   font-size: 60px;
   transition: none;
 }
-
 .header span a:active {
   transition: none;
 }
@@ -127,7 +123,6 @@ body {
   grid-template-columns: 200px 800px;
   grid-gap: 0px;
 }
-
 .grid-container-right {
   top: 0;
   right: 0;
@@ -138,7 +133,6 @@ body {
   grid-column: 1 / 1;
   padding: auto;
 }
-
 .navbar h2 {
   color: red;
   animation: glitch-n 50ms infinite;
@@ -167,10 +161,10 @@ body {
   grid-row: 2 / 2;
   text-align: center;
 }
-
 .footer a:visited {
   color: #1e9b28;
 }
+
 .inspired {
   font-size: small;
   color: red;
@@ -179,7 +173,6 @@ body {
   text-decoration: none;
   color: #48df54;
  }
-
 .inspired a:hover {
   font-size: small;
   color: white;
@@ -229,20 +222,16 @@ body {
   margin-top: 5px;
   text-align: left;
 }
-
 .navbar li:hover {
   color: #ffffff;
   border: #ff0f0f solid 1px;
   text-decoration: line-through;
   animation: glitch-h 180ms infinite;
-
   /* add a random rotation effect when hovered inshallah */
 }
-
 .navbar p {
   font-weight: bold;
 }
-
 .navbar-image {
   width: 80px;
   margin: 0 auto;
@@ -279,7 +268,6 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .welcome h1 {
   font-weight: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -293,7 +281,6 @@ body {
   grid-row: 2 / 2;
   border: 1px solid #ce7e4b;
 }
-
 .main-content-img img {
   max-width: 100%;
 }
@@ -306,7 +293,6 @@ body {
   margin: 10px;
   padding: 10px;
 }
-
 .inner-warning {
   height: 240px;
   overflow-y: auto;
@@ -316,7 +302,6 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
 .warning-divider {
   background-image: url(https://cabbagesorter.neocities.org/pics/layout-3/divider1.gif);
   width: 100%;
@@ -327,7 +312,6 @@ body {
 .contact h3 {
   color: #ce7e4b;
 }
-
 .contact {
   grid-column: 1 / 1;
   grid-row: 3 / 3;
@@ -336,7 +320,6 @@ body {
   border: 1px dotted #ce7e4b;
   background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif");
 }
-
 .inner-contact {
   height: 240px;
   display: flex;
@@ -355,7 +338,6 @@ body {
   border: 1px dotted #ce7e4b;
   background-image: url("https://cabbagesorter.neocities.org/pics/layout-3/bg8.gif");
 }
-
 .inner-button-banner {
   height: 240px;
   overflow-y: auto;
@@ -370,7 +352,6 @@ body {
   grid-row: 3 / 3;
   display: flex;
 }
-
 .main-content-img2 img {
   max-width: 100%;
 }
@@ -386,13 +367,11 @@ body {
   padding: 10px;
   border: 1px solid red;
 }
-
 .page-updates li {
   margin-right: 5em;
   padding: 10px;
   border-bottom: darkred 1px solid;
 }
-
 .page-updates p {
   font-weight: bold;
   padding: 5px;
