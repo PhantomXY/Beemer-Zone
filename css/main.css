@@ -3,7 +3,7 @@
 
 /* M A I N  G R I D */
 html {
-  margin-top: 0.2em;
+  margin: auto;
 }
 
 @font-face {
@@ -69,12 +69,13 @@ html {
 
 :root {
   --background-color: black;
-  --background-image: url(https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif);
+  --background-image: url(/assets/videos/main_static.png);
   font-family: "Courier New", Courier, monospace;
   color: #ff0f0f;
 }
 
 body {
+  margin: auto;
   background-image: var(--background-image);
   background-color: var(--background-color);
 
@@ -112,13 +113,11 @@ body {
 }
 
 .header span a:hover {
-  font-size: 58px;
+  font-size: 60px;
   transition: none;
 }
 
 .header span a:active {
-  -webkit-transform: rotate(25deg);
-  -moz-transform: rotate(-25deg);
   transition: none;
 }
 
@@ -156,6 +155,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  animation: glitch-n 50ms infinite;
 }
 
 ::-webkit-scrollbar {
@@ -377,11 +377,12 @@ body {
 
 .page-updates {
   background-color: black;
+  height: auto;
   grid-column: 1 / span 4;
   grid-row: 4 / 4;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 2.5em;
   padding: 10px;
   border: 1px solid red;
 }
